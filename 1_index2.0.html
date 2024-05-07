@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeByte</title>
+  <style>  
+    .full_align{        
+      margin: 25px;
+    }
+          
+    .them{
+      padding: 12px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .our{
+      border: none;
+      border-radius: 3px;
+      float: right;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        
+    }
+    .who{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    }
+
+    img{
+      float:top;
+    }
+    .our{
+      float: right;
+      border: none;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      animation-name: image;
+      animation-duration: 4s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+    }
+    @keyframes image {
+      0%{
+      transform: translatey(0px);
+      }
+      
+      50%{
+      transform: translatey(15px);
+      }
+      
+      100%{
+      transform: translatey(0px);
+      }
+    }
+    .container1{
+      display: flex;
+      justify-content: space-between;
+      border: solid black 2px;
+      padding: 10px 10px ;
+      background-color: black;
+      border-radius: 43px;
+
+    }
+    .container {
+    display: flex;
+    justify-content: center;
+    }
+
+    #coursesBtn {
+      border: solid #22668d 1px;
+      color: #22668d;
+      padding:2px 32px 2px 32px;
+      background-color:#22668d;
+      cursor: pointer;
+      border-radius: 23px;
+      color:white;
+
+      
+    }
+    #coursesBtn:hover{
+      background-color: #22668d;
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+          
+          
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+      
+    .container:hover .dropdown-content {
+      display: block;
+      background-color:black;
+      margin-top: 40px;
+      border-radius: 20px;
+
+
+    }
+    p {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+
+      
+    }
+    a:hover{
+      color: #22668d;
+    }
+
+    .signin{
+      font-size: 12px;
+      border: solid #22668d 1px;
+      padding: 10px 25px ;
+      border-radius: 23px;
+      background-color:#22668d;
+      margin-top: 5px;
+      color:white;
+      cursor: pointer;
+    }
+    .small-text{
+      color: grey;
+    }
+
+    input:hover{
+      background-color: #22668d;
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        
+    }
+        
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background-color 0.5s;
+    }
+
+    .night-mode{
+      background-color: #333;
+      color: #fff;
+    }
+    #nightModeButton{
+      margin-left: 10px;
+      cursor: pointer;
+      border-radius: 34px;
+      color: white;
+      background-color: black;
+      padding: 10px 20px;
+    } 
+  </style>
+</head>
+
+<body>    
+
+<div class="full_align"> 
+  <div class="container1">
+      <img src="C:\Users\hp\Downloads\Fee project all pics\Screenshot 2023-11-04 120327-PhotoRoom.png-PhotoRoom.png" width="200px">
+
+    <div class="container">
+      <button id="coursesBtn">Courses</button>
+      <div class="dropdown-content" id="coursesDropdown">
+        <p><a href=C:\Users\hp\Desktop\Lib\Web-Development_Folder\FEE_PG\5_HTML.html>HTML</a></p>
+        <p><a href=C:\Users\hp\Desktop\Lib\Web-Development_Folder\FEE_PG\6_CSS.html>CSS</a></p>
+        <p><a href=C:\Users\hp\Desktop\Lib\Web-Development_Folder\FEE_PG\7_JS.html>JAVASCRIPT</a></p>
+        <p><a href=C:\Users\hp\Desktop\Lib\Web-Development_Folder\FEE_PG\4_Python.html>PYTHON</a></p>
+      </div>
+    </div>
+    <button id="nightModeButton"> Night Mode</button>
+    <script>
+    // Function to toggle night mode
+    function toggleNightMode() {
+      const body = document.body;
+      body.classList.toggle('night-mode');
+    }
+
+    // Event listener for the button
+    const nightModeButton = document.getElementById('nightModeButton');
+    nightModeButton.addEventListener('click', toggleNightMode);
+    </script>
+
+    <a href="C:\Users\hp\Desktop\Lib\Web-Development_Folder\FEE_PG\2_sign.2.0.html"><input type="submit" value="Sign In" class="signin"></a>  
+  </div>
+          
+  
+  <div class="them">
+    <center><h1>People expect to be bored by eLearning—let’s show them that our CodeByte doesn’t have to be like that!</h1></center>
+
+    <center><font size="5px">Consider staff who are physically challenged, or who are economically disadvantaged and would struggle to afford travel costs, or a remote worker who would otherwise miss out on classroom training. Online training is really something that potentially helps to level the playing field.
+    <br>
+  </div>
+
+  <div class="People">
+    <img class="our" src="C:\Users\hp\Downloads\Fee project all pics\nick-morrison-FHnnjk1Yj7Y-unsplash.jpg"width="52%">
+  </div>
+
+    <p class="who"><font size="5px"><font size="3px" color="Grey">What is Online Learning ?</font><br>&nbsp;<font size="6px">T</font>oday we can do everything online; we can&nbsp; shop online, we can book anything online, we can make payment online, then why not study? Yes, of course we can also study online. Now with the help of new technologies and equipment everything is possible and so is “Online learning”. And we can also say that online education can be the future of learning in the upcoming days.<br>
+
+    <font size="4px"><p class="small-text"> Online education is a new technique of studying efficiently.</p>
+
+    <p class="small-text"> Online education is flexible as it fits in everyone’s schedule.</p>
+    </font>
+  <br><br><br>
+
+  <center>
+  <font  color="grey" size="6px">“Nothing is impossible. The word itself says “I’m possible!”</font>
+  </center>
+  <br>
+
+  <div class="People_2">
+    <img class="our" src="C:\Users\hp\Downloads\Fee project all pics\marvin-meyer-SYTO3xs06fU-unsplash.jpg"width="52%">
+  </div>
+
+    <p class="who"><font size="5px"><font size="3px" color="Grey">Benefits of eLearning</font><br>&nbsp;<font size="6px">T</font>here has been a lot of research into e learning advantages and disadvantages from the perspectives of education and corporate training. But let us first look into its benefits. Their are four main advantages of e learning that can be seen by students: learner control, accessibility, availability, and personalization.
+
+    <font color="Grey" size="4px"><p> Cost reductions, as elearning lowers travel and meal expenses associated with employee training.</p>
+    </font>
+
+    <br>
+  <center>
+  <font  color="grey" size="6px">“Don’t let yesterday take up too much of today.”</font>
+  </center>
+  <br><br>
+
+  <div>
+    <img class="our" src="C:\Users\hp\Downloads\Fee project all pics\Computer-Languages.jpg" width="52%">
+    <font size="4px" color="Grey"> Courses</font>
+    <font size="5px">
+    <p> Here  we provide you various Courses<br><br> Courses Like:
+    <font color="Grey" size="3px">
+    <br> 1. HTML
+    <br> 2. CSS
+    <br> 3. JAVASCRIPT
+    <br> 4. PYTHON
+    </font>
+    </p>
+    </font>
+  </div>
+  <br>
+
+</div>
+</body>
+</html>

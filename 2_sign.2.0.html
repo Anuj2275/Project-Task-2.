@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color:white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 3px;
+      box-sizing: border-box;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #22668d;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color:black;
+      color: #22668d;
+    }
+
+    .message {
+      text-align: center;
+      color: #22668d;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sign In</h1>
+    <form id="signInForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="submit" value="Sign In" onclick="validateForm(event)">
+    </form>
+    <p class="message" id="resultMessage"></p>
+  </div>
+
+  <script>
+    function validateForm(event) {
+      event.preventDefault(); // Prevents the form from submitting
+
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+      var resultMessage = document.getElementById('resultMessage');
+
+      // Simple validation, you can replace it with more complex validation logic
+      if (username === 'example' && password === 'password') {
+        resultMessage.className = 'message';
+        resultMessage.textContent = 'Sign-in successful!';
+      } else {
+        resultMessage.className = 'message error';
+        resultMessage.textContent = 'Invalid username or password. Please try again.';
+      }
+    }
+  </script>
+</body>
+</html>
