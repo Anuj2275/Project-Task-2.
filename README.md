@@ -2,3 +2,5 @@
 We made an online learning platform where user can access resources to learn various languages. 
 easily acessible from anywhere.
 includes links to video lectures , notes and practice question set.
+one can acess progress and work at his own covwnient way.
+
